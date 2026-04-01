@@ -1,36 +1,29 @@
-# Домашка 006 — Lists and Comprehension
+# Домашка 006 — Lists, Comprehension & Tuples
 
 ## Задание
 
-Реализуй функции в 9 файлах. Всего 44 функции.
+Реализуй функции в 4 файлах. Всего 24 функции.
 
-### Обязательно (части 1-5):
-- `list_basics.py` — first, last, rest, init
-- `list_search.py` — find_index, count, contains
-- `aggregation.py` — sum_list, product_list, max_list, min_list, average
-- `comprehension.py` — squares, evens, positives, lengths, upper_all
-- `higher_order_lists.py` — apply_to_all, filter_by, reduce, count_if, all_satisfy, any_satisfy
+### Обязательно:
+- `list_ops.py` — 5 функций: sum_list, max_list, count_item, reverse_list, flatten_once
+- `comprehension.py` — 6 функций (каждая одной строкой): squares, evens_only, long_words, pairs, unique_chars, word_lengths
+- `tuples.py` — 6 функций: point, x_coord, y_coord, distance, midpoint, swap
 
-### Продвинуто (части 6-7):
-- `string_lists.py` — chars, join_chars, reverse_string, is_palindrome, remove_vowels, count_words
-- `nested_lists.py` — flatten, deep_sum, matrix_row, matrix_col, transpose
-- `practical.py` — unique, intersection, difference, zip_lists, unzip, group_by
-
-### Бонус:
-- `algorithms.py` — binary_search, merge_sorted, quicksort, is_sorted
+### Продвинуто:
+- `rational.py` — 7 функций: rational, numer, denom, add_rational, mul_rational, equal_rational, print_rational
 
 ## Ограничения
 
 ❌ Нельзя использовать:
 - `sum()`, `max()`, `min()`, `sorted()`, `reversed()`
 - `.sort()`, `.reverse()`, `.index()`, `.count()`
-- `set()`, `dict()` (кроме group_by)
 
 ✅ Можно использовать:
 - `len()`, `range()`, `in`
 - Индексы и срезы
-- List comprehension
+- List / set / dict comprehension
 - Циклы for/while
+- `from math import gcd, sqrt` (для rational.py и tuples.py)
 
 ## Как сдать
 

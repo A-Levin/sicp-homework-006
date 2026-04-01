@@ -1,14 +1,23 @@
 def squares(n):
+    """Список квадратов чисел от 1 до n включительно."""
     pass
 
-def evens(items):
+def evens_only(items):
+    """Только чётные числа из списка."""
     pass
 
-def positives(items):
+def long_words(words, min_len):
+    """Слова длиннее min_len символов."""
     pass
 
-def lengths(strings):
+def pairs(n):
+    """Все пары (i, j), где i < j, оба из range(n)."""
     pass
 
-def upper_all(strings):
+def unique_chars(s):
+    """Уникальные символы строки — через set comprehension."""
+    pass
+
+def word_lengths(words):
+    """Словарь {слово: длина} — через dict comprehension."""
     pass
