@@ -12,22 +12,17 @@ def test_rational_reduces():
     assert denom(r) == 2
 
 def test_add_rational():
-    half = rational(1, 2)
-    third = rational(1, 3)
-    result = add_rational(half, third)
+    result = add_rational(rational(1, 2), rational(1, 3))
     assert numer(result) == 5
     assert denom(result) == 6
 
-def test_add_rational_same():
-    third = rational(1, 3)
-    result = add_rational(third, third)
+def test_add_rational_reduces():
+    result = add_rational(rational(1, 3), rational(1, 3))
     assert numer(result) == 2
     assert denom(result) == 3
 
 def test_mul_rational():
-    half = rational(1, 2)
-    third = rational(1, 3)
-    result = mul_rational(half, third)
+    result = mul_rational(rational(1, 2), rational(1, 3))
     assert numer(result) == 1
     assert denom(result) == 6
 
@@ -37,12 +32,11 @@ def test_equal_rational():
 
 def test_print_rational(capsys):
     print_rational(rational(1, 2))
-    captured = capsys.readouterr()
-    assert captured.out.strip() == "1/2"
+    assert capsys.readouterr().out.strip() == "1/2"
 
 def test_abstraction_barrier():
     import rational as r
     for fn_name in ['add_rational', 'mul_rational', 'equal_rational']:
         src = inspect.getsource(getattr(r, fn_name))
         assert '[0]' not in src and '[1]' not in src, \
-            f"{fn_name} не должна обращаться к индексам напрямую — используй numer/denom"
+            f"{fn_name} не должна обращаться к индексам — используй numer/denom"

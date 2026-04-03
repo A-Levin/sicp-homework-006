@@ -1,7 +1,3 @@
-def squares(n):
-    """Список квадратов чисел от 1 до n включительно."""
-    pass
-
 def evens_only(items):
     """Только чётные числа из списка."""
     pass
@@ -20,4 +16,26 @@ def unique_chars(s):
 
 def word_lengths(words):
     """Словарь {слово: длина} — через dict comprehension."""
+    pass
+
+def transpose(matrix):
+    """Транспонирует матрицу (список списков) через nested comprehension."""
+    pass
+
+def group_by(f, items):
+    """Группирует элементы по значению f(x) через dict comprehension.
+    Возвращает словарь {ключ: [элементы с таким ключом]}.
+    """
+    pass
+
+def all_triples(n):
+    """Все тройки (i, j, k), где i < j < k, все из range(n).
+    Тройная вложенность.
+    """
+    pass
+
+def matrix_from_flat(flat, cols):
+    """Превращает плоский список в матрицу с cols столбцами.
+    Из плоского — во вложенное.
+    """
     pass
